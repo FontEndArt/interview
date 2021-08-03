@@ -23,17 +23,32 @@ function flat(arr) {
   //   }
   //   return res;
   // 队列 不稳定，外层优先
-  const res = [];
-  const queue = [arr];
-  while (queue.length) {
-    const value = queue.shift();
-    if (Array.isArray(value)) {
-      queue.push(...value);
-    } else {
-      res.push(value);
-    }
+  //   const res = [];
+  //   const queue = [arr];
+  //   while (queue.length) {
+  //     const value = queue.shift();
+  //     if (Array.isArray(value)) {
+  //       queue.push(...value);
+  //     } else {
+  //       res.push(value);
+  //     }
+  //   }
+  //   return res;
+  // reduce dfs 稳定
+  //   function dfs(values) {
+  //     return values.reduce(
+  //       (res, item) =>
+  //         Array.isArray(item) ? [...res, ...dfs(item)] : [...res, item],
+  //       []
+  //     );
+  //   }
+  //   return dfs(arr);
+  // 自身作为一个容器去迭代 - 不推荐
+  if (!arr.length) return;
+  while (arr.some((item) => Array.isArray(item))) {
+    arr = [].concat(...arr);
   }
-  return res;
+  return arr;
 }
 
 const res = flat([
