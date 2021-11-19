@@ -29,7 +29,7 @@
 - [ ] 版本号排序
 - [ ] Dom2JSON 和 JSON2Dom
 - [ ] 类数组转化为数组
-- [ ] `Object.is`
+- [x] [`Object.is`](./2.0/Object.is.js)
 - [ ] Ajax (xhr)
 - [ ] 分片思想解决大量数据渲染问题
 - [ ] 模版字符串解析
