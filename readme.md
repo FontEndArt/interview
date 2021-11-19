@@ -17,6 +17,7 @@
 - [x] [数组扁平化处理](./2.0/flat.js)
 - [x] [setTimeout 实现 setInterval](./2.0/setTimeout实现setInterval.js)
 - [x] [发布订阅模式](./2.0/subscribe.js)
+- [x] [Promise.allSettled](./2.0/Promise.allSettled.js)
 - [ ] 继承
 - [ ] Promise 含 then、catch、resolve、reject、race、all、abort
 - [ ] new 操作符
