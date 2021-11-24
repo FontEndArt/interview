@@ -18,6 +18,7 @@
 - [x] [setTimeout 实现 setInterval](./2.0/setTimeout实现setInterval.js)
 - [x] [发布订阅模式](./2.0/subscribe.js)
 - [x] [Promise.allSettled](./2.0/Promise.allSettled.js)
+- [x] [MyURLSearchParams](./2.0/MyURLSearchParams.js)
 - [ ] 继承
 - [ ] Promise 含 then、catch、resolve、reject、race、all、abort
 - [ ] new 操作符
